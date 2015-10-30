@@ -52,5 +52,8 @@ Tools for F1 hybrid PSMC (hPSMC) divergence time inference from whole genomes
 			If the hPSMC directory is not in your path give it's location, NOTE:  Just the directory not the script.  default = "./"
 
 
-5) Plot simulations with the orignal data to show the divergence between samples.
+5) Plot simulations using either method in step 3, with the orignal data to show the divergence between samples.  
+	A) Compare simulations' pre-divergence Ne to your data, if they converge the simulations are appropriate, if not reestimate Ne and repeat steps 3-5
+	B) Identify the range of values for divergence time that intersect your hPSMC plot between 1.5 and 10 times pre-divergence Ne.  These are your simulations consistent with data.  Your diverence time estimate is the narrowest range of inconsistent simulations surrounding the consistent simulations. 
+	
 
