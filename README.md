@@ -35,7 +35,9 @@ Tools for F1 hybrid PSMC (hPSMC) divergence time inference from whole genomes
 
 4) Run simulations of divergence without post-divergence migration to compare to the hPSMC plot
 
-	In order to interpret
+	In order to interpret hPSMC results we need to compare our data to simulations.  A purely visual interpreation of hPSMC output plots is susceptible to user bias and not replicable. To conduct simulations the user should estimate the ancestral population size (step 3) and estimate a recent and ancient bound for when the sample might have diverged.  
+	
+		python hPSMC/
 
 5) Plot simulations with the orignal data to show the divergence between samples.
 
