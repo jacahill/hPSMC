@@ -13,10 +13,13 @@ Tools for F1 hybrid PSMC (hPSMC) divergence time inference from whole genomes
 2) run psmc using the hPSMC.psmcfa
 	We ran PSMC under default settings. See https://github.com/lh3/psmc
 	psmc -N25 -t15 -r5 -p "4+25*2+4+6" -o hPSMC.psmc hPSMC.psmcfa
+
 3) Visualize hPSMC.psmc and estimate pre-diverence population size.
 	Standard PSMC method.
 		psmc_directory/utils/psmc_plot.pl hPSMC hPSMC.psmc
 	Alternative script included here. 
 		python hPSMC/PSMC_emit_last_iteration_coord.py -s10 -g25 -m0.000000001 hPSMC.psmc
+
 4) Run simulations of divergence without post-divergence migration to compare to the hPSMC plot
+
 5) Plot simulations with the orignal data to show the divergence between samples.
