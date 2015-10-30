@@ -37,7 +37,23 @@ Tools for F1 hybrid PSMC (hPSMC) divergence time inference from whole genomes
 
 	In order to interpret hPSMC results we need to compare our data to simulations.  A purely visual interpreation of hPSMC output plots is susceptible to user bias and not replicable. To conduct simulations the user should estimate the ancestral population size (step 3) and estimate a recent and ancient bound for when the sample might have diverged.  
 	
-		python hPSMC/
+		python hPSMC/hPSMC_quantify_split_time.py -OPTIONS
+			OPTIONS:
+			-h print help message with user options
+			-o OUT, --out=OUT     output directory for simulations and prefix all files for the run, default="./hPSMC_sim_"
+			-N NE, --Ne=NE        The ancestral population size to simulate, default=10,000
+			-l LOWER, --lower=LOWER
+                        lower bound for simulations, the most recent divergence time to be simulated
+                        -u UPPER, --upper=UPPER
+                        upper bound for simulations, the most ancient divergence time to be simulated
+                        -s SIMS, --sims=SIMS  the number of simulations to conduct, simulations will evenly split between high and low, minimum value=2, minimum meaningful value=3
+                        -p PAR, --parallel=PAR
+                        Number of simulations to run simultaneously
+                        -P PSMC, --PSMC=PSMC  If the psmc executable is not in your path give it's location, default = "psmc"
+                        -m MS, --ms=MS        If the ms executable is not in your path give it's location, default = "ms"
+                        -H HPSMC, --hPSMC=HPSMC
+                        If the hPSMC directory is not in your path give it's location, NOTE:  Just the directory not the script.  default = "./"
+
 
 5) Plot simulations with the orignal data to show the divergence between samples.
 
