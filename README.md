@@ -8,12 +8,17 @@ Tools for F1 hybrid PSMC (hPSMC) divergence time inference from whole genomes
 
 1) Create an hPSMC .psmcfa input file from two samples 
 
-	haploidize each bam file to a fasta.  I use R. Ed Green's pu2fa program available here- https://github.com/Paleogenomics/Chrom-Compare
+	haploidize each bam file to a fasta.  I use R. Ed Green's pu2fa program available here- 
+	https://github.com/Paleogenomics/Chrom-Compare
+	
+	Usage:  For each chromosome run:
 	samtools mpileup -s -f REF\_GENOME -q30 -Q30 -r CHROMOSOME BAMFILE.bam | \
 	pu2fa -c CHROMOSOME -C MAX\_COVERAGE > haploidized_fasta.fa
 	
-	combine fasta sequences from two individuals into a single .psmcfa file.
+	Then concatenate all of the single chromosome fastas into a single fasta.
 	
+	combine fasta sequences from two individuals into a single .psmcfa file.
+	python psmcfa_from_2_fastas.py -b10 -m5 sample1_all.fa sample2_all.fa > hPSMC.psmcfa
 	
 2) run psmc using the hPSMC.psmcfa
 
