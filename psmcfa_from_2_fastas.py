@@ -1,9 +1,11 @@
+### Script to combine two fastas into a single psmcfa file ###
+
 import sys,os
 from optparse import OptionParser
 
-bin=100
-min=50
-TV=False
+bin=100 # default bin size for psmcfa according to psmc.  For divergent taxa smaller bin sizes are preferable but will cause longer analysis times.
+min=50 # the minimum number of sites covered by both individuals to return a result.  Otherwise N
+TV=False # For ancient DNA restricting analysis to transversion sites avoids bias from deamination damage.
 
 
 ### OPTIONS ###
