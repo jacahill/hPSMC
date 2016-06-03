@@ -31,13 +31,13 @@ We ran PSMC under default settings. See https://github.com/lh3/psmc
 3) Visualize hPSMC.psmc and estimate pre-diverence population size.
 Standard PSMC method.
 	
-		psmc_directory/utils/psmc_plot.pl hPSMC hPSMC.psmc
+	psmc_directory/utils/psmc_plot.pl hPSMC hPSMC.psmc
 		
 Alternative script included here. The -s -g and -m flags show their default values.
 	
-		python hPSMC/PSMC_emit_last_iteration_coord.py -s10 -g25 -m0.000000001 hPSMC.psmc
-		
-	Once we have plotted the psmc result using one of the two above methods estimate the pre-divergence population size which will be input for step 4.
+	python hPSMC/PSMC_emit_last_iteration_coord.py -s10 -g25 -m0.000000001 hPSMC.psmc
+	
+Once we have plotted the psmc result using one of the two above methods estimate the pre-divergence population size which will be input for step 4.
 		
 
 4) Run simulations of divergence without post-divergence migration to compare to the hPSMC plot
