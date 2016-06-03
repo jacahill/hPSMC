@@ -12,17 +12,20 @@ haploidize each bam file to a fasta.  I use R. Ed Green's pu2fa program availabl
 https://github.com/Paleogenomics/Chrom-Compare
 	
 Usage:  For each chromosome run:
+
 	samtools mpileup -s -f REF\_GENOME -q30 -Q30 -r CHROMOSOME BAMFILE.bam | \
 	pu2fa -c CHROMOSOME -C MAX\_COVERAGE > haploidized_fasta.fa
 	
 Then concatenate all of the single chromosome fastas into a single fasta.
 	
 combine fasta sequences from two individuals into a single .psmcfa file.
+
 	python psmcfa_from_2_fastas.py -b10 -m5 sample1_all.fa sample2_all.fa > hPSMC.psmcfa
 	
 2) run psmc using the hPSMC.psmcfa
 
 We ran PSMC under default settings. See https://github.com/lh3/psmc
+
 	psmc -N25 -t15 -r5 -p "4+25*2+4+6" -o hPSMC.psmc hPSMC.psmcfa
 
 3) Visualize hPSMC.psmc and estimate pre-diverence population size.
