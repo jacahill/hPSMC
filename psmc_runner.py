@@ -1,9 +1,8 @@
 import sys,os
 from optparse import OptionParser
 
-### Pipeline:
-## bam2fq
-#samtools mpileup -C50 -uf ref.fa aln.bam | bcftools view -c - | vcfutils.pl vcf2fq -d 10 -D 100 | gzip > diploid.fq.gz
+## Optional tool
+# Runs psmc and bootstrapping. 
 
 ## psmc main run
 #    utils/fq2psmcfa -q20 diploid.fq.gz > diploid.psmcfa
