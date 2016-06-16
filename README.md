@@ -1,6 +1,5 @@
-#PLEASE NOTE:  THIS GITHUB PAGE IS A WORK IN PROGRESS!  
-I have tested these programs on my local machine but I am currently working on uploading and documenting files.
-I will remove this warning when I have finished.
+#Use of these scripts
+All scripts provided here are available for free use for personal or acadmeic usage without any warentee. I have tested these scripts on my own hardware but cannot guarentee that it is compatible with other hardware or software.  If you use this program in a publication we ask that you cite our paper ().
 
 # hPSMC
 Tools for F1 hybrid PSMC (hPSMC) divergence time inference from whole genomes
