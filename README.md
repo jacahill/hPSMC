@@ -16,7 +16,10 @@ Usage:  For each chromosome run:
 	pu2fa -c CHROMOSOME -C MAX\_COVERAGE > haploidized_fasta.fa
 	
 The very high basequality threshold "-Q60" is useful for minimizing the impact of sequencing error.
+
 Then concatenate all of the single chromosome fastas into a single fasta.
+
+	cat haploidized_fasta_scaffold*.fa > haploidized_fasta_all.fa
 	
 combine fasta sequences from two individuals into a single .psmcfa file.
 
