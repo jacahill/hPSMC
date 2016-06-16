@@ -15,7 +15,7 @@ Usage:  For each chromosome run:
 	samtools mpileup -s -f REF\_GENOME -q30 -Q60 -r CHROMOSOME BAMFILE.bam | \
 	pu2fa -c CHROMOSOME -C MAX\_COVERAGE > haploidized_fasta.fa
 	
-The very high basequality threshold "-Q60" is useful for minimizing the impact of sequencing error
+The very high basequality threshold "-Q60" is useful for minimizing the impact of sequencing error.
 Then concatenate all of the single chromosome fastas into a single fasta.
 	
 combine fasta sequences from two individuals into a single .psmcfa file.
