@@ -86,7 +86,7 @@ def ms_command(YEARS):
 	RECOMB = 4 * Ne * RECOMB_S * N_SITES
 	SPLIT = (float(YEARS) / GENERATION_TIME) / (4 * float(Ne))
 	MS_NAME = out+str(YEARS)+".ms_sim"
-	print ms, N_CHRMS, N_REPS, "-t", THETA, "-r", RECOMB, N_SITES, "-I 2 2 2 -ej", SPLIT, "2 1 >", MS_NAME, "&"
+	print ms, N_CHRMS, N_REPS, "-p 8 -t", THETA, "-r", RECOMB, N_SITES, "-I 2 2 2 -ej", SPLIT, "2 1 >", MS_NAME, "&"
 	return MS_NAME
 
 
