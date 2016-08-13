@@ -1,5 +1,5 @@
 #Use of these scripts
-All scripts provided here are available for free use for personal or acadmeic usage without any warentee. I have tested these scripts on my own hardware but cannot guarentee that it is compatible with other hardware or software.  If you use this program in a publication we ask that you cite our paper ().
+All scripts provided here are available for free use for personal or acadmeic usage without any warentee. I have tested these scripts on my own hardware but cannot guarentee that it is compatible with other hardware or software.  If you use this program in a publication we ask that you cite our paper (http://rstb.royalsocietypublishing.org/content/371/1699/20150138.abstract).
 
 # hPSMC
 Tools for F1 hybrid PSMC (hPSMC) divergence time inference from whole genomes
@@ -66,4 +66,4 @@ Once we have plotted the psmc result using one of the two above methods estimate
 	A) Compare simulations' pre-divergence Ne to your data, if they converge the simulations are appropriate, if not reestimate Ne and repeat steps 3-5
 	B) Identify the range of values for divergence time that intersect your hPSMC plot between 1.5 and 10 times pre-divergence Ne.  These are your simulations consistent with data.  Your diverence time estimate is the narrowest range of inconsistent simulations surrounding the consistent simulations. 
 	
-
+Important Warning:  When you run simulations with ms be sure that it is set to output enough decimal points for the mutation locations.  By default ms outputs 5 decimal places which is enough to 100,000 bins.  Recent versions of ms include the -p flag which allows you to set the number of decimal places to report.  I recommend using -p8 in most cases.  My most recent versions of these programs assume that you have the most recent ms and that you are using the -p flag.
