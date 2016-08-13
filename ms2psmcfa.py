@@ -69,6 +69,7 @@ def read_chr(line):
 		line=file.readline()
 	segsites=line.split(" ")  ### Split the line that tells you where the variable sites are into a list
 	data.append(segsites[1:-1])
+	bin_check(data)
 	line=file.readline()
 	chrA=line
 	line=file.readline()
@@ -83,6 +84,22 @@ def read_chr(line):
 	data.append(chrA[:-1])
 	data.append(chrB[:-1])
 	return data #[[segsites],chrA,chrB]
+
+
+def bin_check(sites):
+        site=sites[0][0]
+        size=len(str(site))
+        power=10**(int(size)-1)
+        max_data=power*bin_size
+        min_bin=chr_len/max_data
+        if max_data<chr_len:
+                sys.stderr.write("Error: ms input file does not have adequate resolution to generate data of this size\n\
+\tBy default ms emits site information to 5 decimal places allowing for 100,000 unique mutation locations.\n\
+\tTo increase this you must run ms with with the -p flag to specify the number of decimal places.\n\n")
+                oute="Your ms file currently allows for a chromosome length of "+str(power)+"\nTo use this ms file and chromosome length you must set you bin size to at least "+str(min_bin)+"\nEXITING\n"
+                sys.stderr.write(oute)
+                sys.exit()
+
 
 
 
