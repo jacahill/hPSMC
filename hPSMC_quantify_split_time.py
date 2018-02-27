@@ -147,6 +147,5 @@ print ""
 
 ## Estimate Divergence time ## 
 print "### Estimate Divergence time with hPSMC ###"
-# ls 2pop_no_mix_Split_*psmc | python ~/Documents/scripts/hPSMC_compare_sims_to_data.py -i ../../sandbox/ape_shit/bonobo-human.chimp-human.v2.psmc
 command = "ls " + out + "*psmc | python " + hPSMC + "hPSMC_compare_sims_to_data.py -i "+ sys.argv[-1] + " > " + out + "result.txt" 
 print command
