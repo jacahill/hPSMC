@@ -1,5 +1,5 @@
-#Use of these scripts
-All scripts provided here are available for free use for personal or acadmeic usage without any warentee. I have tested these scripts on my own hardware but cannot guarentee that it is compatible with other hardware or software.  If you use this program in a publication we ask that you cite our paper (http://rstb.royalsocietypublishing.org/content/371/1699/20150138.abstract).
+# Use of These Scripts
+All scripts provided here are available for free personal or academic usage without any warranty. I have tested these scripts on my own hardware but cannot guarentee that it is compatible with other hardware or software.  If you use this program in a publication we ask that you cite our paper: (http://rstb.royalsocietypublishing.org/content/371/1699/20150138.abstract).
 
 # hPSMC
 Tools for F1 hybrid PSMC (hPSMC) divergence time inference from whole genomes
