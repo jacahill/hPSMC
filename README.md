@@ -1,3 +1,9 @@
+# Warning
+Some users have recently reported that the option flags used to set values (bin size, mutation rate, generation time etc) are silently failing to change values away from defaults. I believe this to be caused by some sort of software update that is conflicting with their systems but I don't know the cause, just that it has stopped working properly. 
+I will work to update the scripts to a more stable code base keeping the previous syntax, until then a work around is to manually modify the default settings to whatever values you need in your personal scripts. If you need assistance with this or have further questions about it please contact me.
+Best Wishes and Good Luck,
+James
+
 # Use of These Scripts
 All scripts provided here are available for free personal or academic usage without any warranty. I have tested these scripts on my own hardware but cannot guarentee that it is compatible with other hardware or software.  If you use this program in a publication we ask that you cite our paper: (http://rstb.royalsocietypublishing.org/content/371/1699/20150138.abstract).
 
