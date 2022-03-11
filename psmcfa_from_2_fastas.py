@@ -107,25 +107,25 @@ def check_TV(indA, indB):
 	elif indA=="C":
 		if indB=="A":
 			tc="Yes"
-                elif indB=="G":
-                        tc="Yes"
-                elif indB=="T":
-                        tc="No"
-	elif indA=="G":
-                if indB=="A":
-                        tc="No"
-                elif indB=="C":
-                        tc="Yes"
-                elif indB=="T":
-                        tc="Yes"
-        elif indA=="T":
-                if indB=="A":
-                        tc="Yes"
-                elif indB=="C":
-                        tc="No"
-                elif indB=="G":
-                        tc="Yes"
-	return tc
+	elif indB=="G":
+		tc="Yes"
+	elif indB=="T":
+		tc="No"
+elif indA=="G":
+	if indB=="A":
+		tc="No"
+	elif indB=="C":
+		tc="Yes"
+	elif indB=="T":
+		tc="Yes"
+elif indA=="T":
+	if indB=="A":
+		tc="Yes"
+	elif indB=="C":
+		tc="No"
+	elif indB=="G":
+		tc="Yes"
+return tc
 
 
 
